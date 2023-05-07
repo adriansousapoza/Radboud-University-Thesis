@@ -1,0 +1,157 @@
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{subcaption}
+% \usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[a4paper,width=160mm,top=35mm,bottom=35mm,headheight=15mm]{geometry}
+\usepackage[title]{appendix}
+\usepackage{url}
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{siunitx}
+\usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage[final]{microtype}
+\usepackage{titlesec}
+\usepackage{blindtext}
+\usepackage{relsize}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{epigraph}
+\usepackage{bbold}
+\usepackage{floatrow}
+
+% Bibliography
+\usepackage[sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+% Images
+\graphicspath{{img/}}
+
+% Layout
+\titleformat{\chapter}[display]   
+{\normalfont\Large\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\scshape\leftmark}
+\fancyfoot[C]{\thepage}
+
+% Figures
+\newcommand{\fig}[2]{\begin{figure}[H]
+    \centering
+    \includegraphics[width=#2\textwidth]{#1}
+\end{figure}}
+
+% Listings (Coding environment)
+\lstset{
+    language=Python,
+    frame=tb,
+    tabsize=4,
+    showstringspaces=false,
+    numbers=left,
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+}
+
+% General definitions
+\newcommand{\deriv}{\mathrm{d}}
+\newcommand{\dint}{\,\mathrm{d}}
+\newcommand{\lagrangian}{\mathscr{L}}
+\newcommand{\hamiltonian}{\mathscr{H}}
+\newcommand{\idfunc}{\mathbb{1}}
+\newcommand{\defeq}{\coloneqq}
+\newcommand{\del}{\nabla}
+\newcommand{\desda}{\quad \Longleftrightarrow \quad }
+
+% Commands
+\newcommand{\for}{\quad \mathrm{for} \quad}
+\newcommand{\with}{\quad \mathrm{with} \quad}
+\newcommand{\where}{\quad \mathrm{where} \quad}
+\newcommand{\aand}{\quad \mathrm{and} \quad}
+\newcommand{\at}{\quad \mathrm{at} \quad}
+\newcommand{\as}{\quad \mathrm{as} \quad}
+\newcommand{\iif}{\quad \mathrm{if} \quad}
+\newcommand{\eelse}{\quad \mathrm{else} \quad}
+
+% Brackets
+\newcommand{\brackets}[1]{\left(#1\right)}
+\newcommand{\abrackets}[1]{\left[#1\right]}
+\newcommand{\bbrackets}[1]{\left\{#1\right\}}
+\newcommand{\cbrackets}[1]{\left\langle#1\right\rangle}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\longline}[1]{\left.#1\right|}
+\newcommand{\casess}[1]{\begin{cases}#1\end{cases}}
+
+% Text
+\newcommand{\ttext}[1]{\text{#1}}
+
+% Numbers
+\newcommand{\naturalnumbers}{\mathbb{N}}
+\newcommand{\integernumbers}{\mathbb{Z}}
+\newcommand{\rationalnumbers}{\mathbb{Q}}
+\newcommand{\realnumbers}{\mathbb{R}}
+\newcommand{\irrationalnumbers}{\mathbb{I}}
+\newcommand{\complexnumbers}{\mathbb{C}}
+\newcommand{\quaternionnumbers}{\mathbb{H}}
+\newcommand{\im}{\text{Im}}
+\newcommand{\re}{\text{Re}}
+
+% Statistics & Probability
+\newcommand{\mse}{\mathrm{MSE}}
+\newcommand{\prob}{\mathds{P}}
+\newcommand{\mean}{\mathds{E}}
+\newcommand{\independent}{\perp \!\!\!\!\perp}
+\newcommand{\uncorrelated}{\perp}
+\newcommand{\var}{\mathrm{var}}
+\newcommand{\cov}{\mathrm{cov}}
+
+% Theorems & Exercises
+\renewcommand\qedsymbol{QED}
+
+\theoremstyle{plain}
+\newtheorem{exercise}{Exercise}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem*{example}{Example}
+\newtheorem{solution}{Solution}[exercise]
+
+\theoremstyle{plain}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{corollary}[definition]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% Quantum Physics
+\newcommand{\adjoint}{\dag}
+\newcommand{\groundstate}{^{(0)}}
+\newcommand{\state}[1]{^{(#1)}}
+
+% Dirac Notation
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\dirac}[1]{\left\langle#1\right\rangle}
+\newcommand{\ddirac}[2]{\left\langle#1\left.\right|#2\right\rangle}
+\newcommand{\dddirac}[3]{\left\langle#1\left|#2\right|#3\right\rangle}
+
+
+

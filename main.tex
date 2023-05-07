@@ -1,0 +1,53 @@
+\documentclass[11pt]{report}
+\usepackage{adrian}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{chapters/titlepage}
+\input{chapters/preamble}
+
+\pagebreak
+\input{chapters/disclaimer}
+\tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{Theory}
+\input{chapters/theory}
+
+\chapter{Implementation and Results}\label{implementation}
+\input{chapters/implementation}
+
+\chapter{Discussion \& Conclusion}
+\input{chapters/conclusion}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\printbibliography[heading=bibintoc, title={Bibliography}]
+\pagebreak
+
+
+\lhead{\scshape Appendix}
+\input{chapters/appendix}
+
+
+
+\end{document}
